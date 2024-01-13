@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car leasing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="./index.html" class="logo">
+                        <img class="logo__img" src="img/logo.svg" alt="Logo">
+                    </a>
+                    <nav class="menu">
+                        <button class="menu__btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__list-link menu__list-link--active">НОВІ АВТО</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="./pre-owned.html" class="menu__list-link">ВЖИВАНІ АВТО</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="./sold-car.html" class="menu__list-link">ПРОДАТИ АВТО</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="./contacts.html" class="menu__list-link">КОНТАКТИ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="choose">
+                <div class="container">
+                    <h2 class="section-title">
+                        Обирай свій новий автомобіль
+                    </h2>
+                    <div class="tabs">
+                        <div class="tabs__btn">
+                            <button class="tabs__btn-item tabs__btn-item--active" data-button="content-1">Легкові</button>
+                            <button class="tabs__btn-item" data-button="content-2">Мінівени</button>
+                            <button class="tabs__btn-item" data-button="content-3">Кросовери</button>
+                            <button class="tabs__btn-item" data-button="content-4">Електро</button>
+                        </div>
+                        <div class="tabs__content">
+                            <div class="tabs__content-item tabs__content-item--active" id="content-1">
+                                <div class="card">
+                                    <img class="card__img" src="./img/sed-1.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Mercedes-Benz E300</h4>
+                                        <p class="card__text">стартує від $ 65000</p>
+                                        <p class="card__price">$ 650/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Mercedes E300')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/sed-2.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">BMW 330i</h4>
+                                        <p class="card__text">стартує від $ 45000</p>
+                                        <p class="card__price"> $ 450/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('BMW 330i')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/sed-3.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Mercedes-Benz E220</h4>
+                                        <p class="card__text">стартує від $ 55000</p>
+                                        <p class="card__price"> $ 550/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Mercedes E220')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/sed-4.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">BMW 730i</h4>
+                                        <p class="card__text">стартує від $ 110000</p>
+                                        <p class="card__price">$ 1100/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('BMW 730i')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/sed-5.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Mercedes-Benz S500</h4>
+                                        <p class="card__text">стартує від $ 170000</p>
+                                        <p class="card__price">$ 1700/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Mercedes-Benz S500')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/sed-6.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Toyota Camry XSE</h4>
+                                        <p class="card__text">стартує від $ 50000</p>
+                                        <p class="card__price"> $ 500/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Toyota Camry XSE')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/sed-7.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Audi A3</h4>
+                                        <p class="card__text">стартує від $ 35000</p>
+                                        <p class="card__price"> $ 350/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Audi A3')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/sed-8.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Skoda Octavia A8</h4>
+                                        <p class="card__text">стартує від $ 32000</p>
+                                        <p class="card__price">$ 320/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Skoda Octavia A8')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/sed-9.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Volkswagen Jetta</h4>
+                                        <p class="card__text">стартує від $ 32000</p>
+                                        <p class="card__price">$ 320/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Volkswagen Jetta')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/sed-10.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Kia Rio</h4>
+                                        <p class="card__text">стартує від $ 18000</p>
+                                        <p class="card__price"> $ 180/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Kia Rio')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/sed-11.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Hyundai Accent</h4>
+                                        <p class="card__text">стартує від $ 19000</p>
+                                        <p class="card__price"> $ 190/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Hyundai Accent')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/sed-12.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Volkswagen Polo</h4>
+                                        <p class="card__text">стартує від $ 18000</p>
+                                        <p class="card__price">$ 180/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Volkswagen Polo')">Забронювати</a>
+                                </div>
+                            </div>
+                            <div class="tabs__content-item" id="content-2">
+                                <div class="card">
+                                    <img class="card__img" src="./img/min-1.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Mercedes Viano</h4>
+                                        <p class="card__text">стартує від $ 90000</p>
+                                        <p class="card__price">$ 900/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Mercedes Viano')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/min-2.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Volkswagen Caravelle</h4>
+                                        <p class="card__text">стартує від $ 70000</p>
+                                        <p class="card__price"> $ 700/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Volkswagen Caravelle')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/min-3.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Hyundai H1</h4>
+                                        <p class="card__text">стартує від $ 40000</p>
+                                        <p class="card__price"> $ 400/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Hyundai H1')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/min-4.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Mercedes Sprinter</h4>
+                                        <p class="card__text">стартує від $ 60000</p>
+                                        <p class="card__price">$ 600/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Mercedes Sprinter')">Забронювати</a>
+                                </div>
+                            </div>
+                            <div class="tabs__content-item" id="content-3">
+                                <div class="card">
+                                    <img class="card__img" src="./img/cross-1.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">BMW X5</h4>
+                                        <p class="card__text">стартує від $ 110000</p>
+                                        <p class="card__price">$ 1100/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('BMW X5')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/cross-2.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Mercedes-Benz GLE</h4>
+                                        <p class="card__text">стартує від $ 115000</p>
+                                        <p class="card__price"> $ 1150/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Mercedes-Benz GLE')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/cross-3.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Volkswagen Touareg</h4>
+                                        <p class="card__text">стартує від $ 100000</p>
+                                        <p class="card__price"> $ 1000/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Volkswagen Touareg')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/cross-4.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Toyota LC 200</h4>
+                                        <p class="card__text">стартує від $ 105000</p>
+                                        <p class="card__price">$ 1050/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Toyota LC 200')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/cross-5.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Mercedes G63 AMG</h4>
+                                        <p class="card__text">стартує від $ 280000</p>
+                                        <p class="card__price">$ 2800/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Mercedes-Benz G63 AMG')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/cross-6.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Range Rover Vogue</h4>
+                                        <p class="card__text">стартує від $ 200000</p>
+                                        <p class="card__price"> $ 2000/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Range Rover Vogue')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/cross-7.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Infinity QX50</h4>
+                                        <p class="card__text">стартує від $ 70000</p>
+                                        <p class="card__price"> $ 700/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Infinity QX50')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/cross-8.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Lexus RX 350</h4>
+                                        <p class="card__text">стартує від $ 80000</p>
+                                        <p class="card__price">$ 800/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Lexus RX 350')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/cross-9.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Audi Q8</h4>
+                                        <p class="card__text">стартує від $ 110000</p>
+                                        <p class="card__price">$ 1100/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Audi Q8')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/cross-10.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Toyota LC 300</h4>
+                                        <p class="card__text">стартує від $ 150000</p>
+                                        <p class="card__price"> $ 1500/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Toyota LC 300')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/cross-11.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Mazda CX-5</h4>
+                                        <p class="card__text">стартує від $ 45000</p>
+                                        <p class="card__price"> $ 450/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Mazda CX-5')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/cross-12.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Audi Q3</h4>
+                                        <p class="card__text">стартує від $ 50000</p>
+                                        <p class="card__price">$ 500/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Audi Q3')">Забронювати</a>
+                                </div>
+                            </div>
+                            <div class="tabs__content-item" id="content-4">
+                                <div class="card">
+                                    <img class="card__img" src="./img/el-1.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">BMW I7 xDrive60</h4>
+                                        <p class="card__text">стартує від $ 190000</p>
+                                        <p class="card__price">$ 1900/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('BMW I7 xDrive60')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/el-2.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Tesla Model 3</h4>
+                                        <p class="card__text">стартує від $ 50000</p>
+                                        <p class="card__price"> $ 500/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Tesla Model 3')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/el-3.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Volkswagen Id.4</h4>
+                                        <p class="card__text">стартує від $ 40000</p>
+                                        <p class="card__price"> $ 400/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Volkswagen Id.4')">Забронювати</a>
+                                </div>
+                                <div class="card">
+                                    <img class="card__img" src="./img/el-4.jpg" alt="card-1">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Nissan Leaf SV</h4>
+                                        <p class="card__text">стартує від $ 30000</p>
+                                        <p class="card__price">$ 300/міс</p>
+                                    </div>
+                                    <a href="#" class="card__link" onclick="openForm('Nissan Leaf SV')">Забронювати</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modall" id="myModall">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeForm()">&times;</span>
+                        <h2 id="carModell"></h2>
+                        <form class="formm" id="carForm2">
+                            <label for="inputName">Ваше ім'я*:</label>
+                            <input type="text" id="inputName" name="name" required>
+            
+                            <label for="inputPhone">Номер телефону*:</label>
+                            <input type="tel" id="inputPhone" name="phone" required>
+
+                            <label for="inputEmail">E-mail*:</label>
+                            <input type="email" id="inputEmail" name="email" required>
+
+                            <label for="inputInsurance">Додаткова страхівка:</label>
+                            <select id="inputInsurance" name="insurance">
+                                <option value="none"></option>
+                                <option value="yes">Так</option>
+                                <option value="no">Ні</option>
+                            </select>            
+
+                            <label for="inputDate">Дата, коли готові забрати авто:</label>
+                            <input type="date" id="inputDate" name="date">
+
+                            <label for="inputComment">Коментар для менеджера:</label>
+                            <textarea id="inputComment" name="comment"></textarea>
+            
+                            <button type="button" onclick="submitForm()">Відправити</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="blog">
+                <div class="container">
+                    <div class="blog__items">
+                        <div class="blog__item">
+                            <img src="./img/blog-1.jpg" alt="blog-item" class="blog__item-img">
+                            <h4 class="blog__item-title">
+                                <p id="#blog">An easier way to buy your next Toyota</p>
+                            </h4>
+                            <a href="https://www.toyota.com/smartpath/how-it-works/" class="blog__item-link">більше</a>
+                        </div>
+                        <div class="blog__item">
+                            <img src="./img/blog-2.jpg" alt="blog-item" class="blog__item-img">
+                            <h4 class="blog__item-title">
+                                A Guide to Road-Tripping With Pets
+                            </h4>
+                            <a href="https://petfbi.org/road-trips-with-pets/" class="blog__item-link">більше</a>
+                        </div>
+                    </div>
+                    <a href="https://triplegend.com/en/magazine/travel-with-car-rental" class="showmore-link">ПОКАЗАТИ БІЛЬШЕ</a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <p class="footer__menu-title">Products</p>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="./new-cars.html">New</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="./sold-car.html">Sell your car</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <p class="footer__menu-title">Resources</p>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="./pre-owned.html">Pre-owned car</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="./contacts.html">FAQ</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <p class="footer__menu-title">Work With TrueCar</p>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="https://www.aldcarmarket.com/">Dealers</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="https://www.aldcarmarket.com/">Partners</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <p class="footer__menu-title">About</p>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="./index.html">About us</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="./contacts.html">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="app">
+                    <li class="app__item">
+                        <a class="app__item-link" href="#">
+                            <img class="app__item-img" src="img/appstore.svg" alt="appstore">
+                        </a>
+                    </li>
+                    <li class="app__item">
+                        <a class="app__item-link" href="#">
+                            <img class="app__item-img" src="img/googleplay.svg" alt="googleplay">
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__copy">
+                    <p class="footer__copy-text">
+                        For questions about the TrueCar Auto Buying Service please call 1-888-878-3227.
+                        Certified Dealers are contractually obligated by TrueCar to meet certain customer
+                        service requirements and complete the 
+                        TrueCar Dealer Certification Program.
+                    </p>
+                    <p class="footer__copy-text">
+                        TrueCar does not broker, sell, or lease motor vehicles. Unless otherwise noted, all
+                        vehicles shown on this website are offered for sale by licensed motor vehicle dealers. 
+                        All vehicles are subject to prior sale. By accessing this website, you agree to the 
+                        TrueCar Terms of Service and Privacy Policy.
+                    </p>
+                </div>
+                <nav class="copy__nav">
+                    <ul class="copy__nav-list">
+                        <li class="copy__nav-item">
+                            <a class="copy__nav-link" href="#">Terms of Service</a>
+                        </li>
+                        <li class="copy__nav-item">
+                            <a class="copy__nav-link" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="copy__nav-item">
+                            <a class="copy__nav-link" href="#">Do Not Sell My Personal Information</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
